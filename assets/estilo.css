@@ -1,0 +1,43 @@
+/* Generado por tools/sitio/generar_sitio.py — no editar a mano. */
+@font-face{font-family:"Lilita One";src:url("LilitaOne-Regular.ttf") format("truetype");font-display:swap}
+:root{--fondo:#f3e6cc;--papel:#fbf4e4;--tinta:#3a2617;--suave:#6e5440;--acento:#a3412a;--acento2:#c77b2b;--borde:#d8c2a0;--sombra:rgba(58,38,23,.12)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--fondo:#1b130d;--papel:#261b13;--tinta:#f1e3c8;--suave:#c6ae8f;--acento:#e8895a;--acento2:#e3a64f;--borde:#4a3627;--sombra:rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--fondo:#1b130d;--papel:#261b13;--tinta:#f1e3c8;--suave:#c6ae8f;--acento:#e8895a;--acento2:#e3a64f;--borde:#4a3627;--sombra:rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;overflow-wrap:anywhere}
+a{color:var(--acento)}
+.latino h1,.latino h2,.latino h3,.latino .marca,.latino .boton{font-family:"Lilita One",system-ui,sans-serif;font-weight:400;letter-spacing:.01em}
+.otro h1,.otro h2,.otro h3,.otro .marca,.otro .boton{font-weight:700}
+.arriba{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:3px double var(--borde);background:var(--papel)}
+.marca{font-size:1.2rem;color:var(--tinta);text-decoration:none}
+.estrellita{color:var(--acento2)}
+.idioma{display:flex;gap:8px;align-items:center;font-size:.9rem;color:var(--suave)}
+.idioma select{font:inherit;color:var(--tinta);background:var(--fondo);border:1px solid var(--borde);border-radius:8px;padding:6px 8px;max-width:60vw}
+main{max-width:760px;margin:0 auto;padding:24px 16px 40px}
+.portada{text-align:center;padding:32px 0 8px}
+.estrella{font-size:3.5rem;line-height:1;color:var(--acento2);text-shadow:0 2px 0 var(--sombra)}
+.portada h1{font-size:clamp(2rem,8vw,3.2rem);line-height:1.1;margin:.3em 0 .2em;color:var(--acento)}
+.lema{color:var(--suave);font-size:1.1rem;margin:0}
+.juegos{margin-top:36px}
+.juegos>h2{font-size:1.4rem;text-align:center;color:var(--suave);margin:0 0 14px}
+.juego{margin:0 0 18px;padding:20px;background:var(--papel);border:2px solid var(--borde);border-radius:14px;box-shadow:0 4px 0 var(--sombra)}
+.juego h3{margin:0 0 .3em;font-size:1.6rem}
+.juego p{margin:0 0 14px}
+.enlaces{display:flex;flex-wrap:wrap;gap:10px;margin:0!important}
+.boton{display:inline-block;padding:11px 18px;border-radius:12px;background:var(--acento);color:#fff8ec;text-decoration:none;font-size:1rem;box-shadow:0 3px 0 var(--sombra)}
+.boton.secundario{background:transparent;color:var(--acento);border:2px solid var(--acento);box-shadow:none}
+.boton:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid var(--acento2);outline-offset:2px}
+.juego-nombre{margin:0;color:var(--acento2);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.85rem}
+.politica h1{font-size:clamp(1.8rem,6vw,2.4rem);color:var(--acento);margin:.1em 0 .2em}
+.politica h2{font-size:1.3rem;margin:1.6em 0 .4em;padding-bottom:.2em;border-bottom:1px solid var(--borde)}
+.politica section{scroll-margin-top:16px}
+.politica section:target{background:var(--papel);border-radius:10px;padding:4px 12px;margin:0 -12px}
+.fecha{color:var(--suave);font-size:.95rem}
+ul{padding-inline-start:1.3em}
+li{margin:.35em 0}
+footer{max-width:760px;margin:0 auto;padding:16px 16px 32px;color:var(--suave);font-size:.9rem;border-top:3px double var(--borde);text-align:center}
+footer p{margin:.3em 0}
+.raiz{text-align:center}
+.lista-idiomas{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.lista-idiomas a{display:block;padding:10px;background:var(--papel);border:1px solid var(--borde);border-radius:10px;text-decoration:none}
